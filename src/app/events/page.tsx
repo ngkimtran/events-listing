@@ -1,9 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Home() {
+const Home = () => {
   return (
     <>
+      <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
+        Events
+      </h1>
       <Link href="">
         <Image src="" alt="" />
         <h2 className="text-3xl font-extrabold dark:text-white">
@@ -44,4 +47,6 @@ export default function Home() {
       </Link>
     </>
   );
-}
+};
+
+export default Home;
