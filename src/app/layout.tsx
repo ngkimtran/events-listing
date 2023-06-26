@@ -19,9 +19,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <header>
-          <nav className="bg-white border-gray-200 bg-gray-900">
+          <nav className="border-gray-200 bg-gray-900">
             <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
-              <Link href="/" className="flex items-center">
+              <Link href="/" className="flex items-center" passHref>
                 <Image
                   src="https://flowbite.com/docs/images/logo.svg"
                   width="50"
@@ -39,6 +39,7 @@ export default function RootLayout({
                     <Link
                       href="/"
                       className="py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:hover:text-blue-700 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                      passHref
                     >
                       Home
                     </Link>
@@ -47,6 +48,7 @@ export default function RootLayout({
                     <Link
                       href="/about"
                       className="py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:hover:text-blue-700 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                      passHref
                     >
                       About Us
                     </Link>
@@ -55,6 +57,7 @@ export default function RootLayout({
                     <Link
                       href="/events"
                       className="py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:hover:text-blue-700 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
+                      passHref
                     >
                       Events
                     </Link>
@@ -65,7 +68,7 @@ export default function RootLayout({
           </nav>
         </header>
 
-        <main className="">{children}</main>
+        <main className="m-20">{children}</main>
 
         <footer>
           <p></p>
