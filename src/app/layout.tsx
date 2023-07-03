@@ -1,7 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
 import "./globals.css";
 import { Inter } from "next/font/google";
+import Header from "./components/header/Header";
+import Footer from "./components/footer/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,61 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header>
-          <nav className="border-gray-200 bg-gray-900">
-            <div className="max-w-screen-xl flex items-center justify-between mx-auto p-4">
-              <Link href="/" className="flex items-center" passHref>
-                <Image
-                  src="https://flowbite.com/docs/images/logo.svg"
-                  width="50"
-                  height="50"
-                  className="h-20 mr-3"
-                  alt="Flowbite Logo"
-                />
-                <span className="self-center text-2xl md:text-3xl font-semibold whitespace-nowrap dark:text-white">
-                  Events Listing
-                </span>
-              </Link>
-              <div>
-                <ul className="font-medium text-lg text-xl flex p-4 mt-4 md:flex-row md:space-x-8 md:mt-0  md:border-0">
-                  <li>
-                    <Link
-                      href="/"
-                      className="py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:hover:text-blue-700 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
-                      passHref
-                    >
-                      Home
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/about"
-                      className="py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:hover:text-blue-700 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
-                      passHref
-                    >
-                      About Us
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      href="/events"
-                      className="py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-gray-100 md:hover:text-blue-700 dark:text-white md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-gray-700"
-                      passHref
-                    >
-                      Events
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
-        </header>
-
-        <main className="m-20">{children}</main>
-
-        <footer>
-          <p></p>
-        </footer>
+        <Header />
+        <main className="px-8 py-20 m-auto w-full max-w-screen-2xl min-h-[88vh]">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
