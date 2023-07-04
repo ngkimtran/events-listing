@@ -23,7 +23,7 @@ const Header = () => (
           <li>
             <Link
               href="/"
-              className="mx-1 p-2 md:px-5 text-gray-900 rounded text-white hover:bg-gray-700 hover:text-white"
+              className="mx-1 p-2 md:px-5 rounded text-white hover:bg-gray-700 hover:text-white"
               passHref
             >
               Home
@@ -32,7 +32,7 @@ const Header = () => (
           <li>
             <Link
               href="/about"
-              className="mx-1 p-2 md:px-5 text-gray-900 rounded text-white hover:bg-gray-700 hover:text-white"
+              className="mx-1 p-2 md:px-5 rounded text-white hover:bg-gray-700 hover:text-white"
               passHref
             >
               About Us
@@ -41,7 +41,7 @@ const Header = () => (
           <li>
             <Link
               href="/events"
-              className="mx-1 p-2 md:px-5 text-gray-900 rounded text-white hover:bg-gray-700 hover:text-white"
+              className="mx-1 p-2 md:px-5 rounded text-white hover:bg-gray-700 hover:text-white"
               passHref
             >
               Events

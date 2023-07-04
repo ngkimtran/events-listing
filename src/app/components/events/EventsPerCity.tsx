@@ -19,7 +19,7 @@ type DataProps = {
 
 const EventsPerCity = ({ city, data }: DataProps) => (
   <>
-    <h1 className="capitalize mb-20 text-6xl font-extrabold text-center leading-none tracking-tight text-gray-900 text-white">
+    <h1 className="capitalize mb-20 text-6xl font-extrabold text-center leading-none tracking-tight text-white">
       Events In {city.replace(/[-]/gi, " ")}
     </h1>
     <div className="flex flex-row flex-wrap w-full gap-8 mr-0 justify-center">
@@ -34,7 +34,7 @@ const EventsPerCity = ({ city, data }: DataProps) => (
             <Image src={`${path.image}`} alt="" fill />
           </div>
           <h2 className="text-2xl font-extrabold text-white">{path.title}</h2>
-          <p className="mb-4 text-lg font-normal text-gray-500 text-gray-400">
+          <p className="mb-4 text-lg font-normal text-gray-500">
             {path.description}
           </p>
         </Link>

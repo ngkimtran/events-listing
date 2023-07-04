@@ -16,7 +16,7 @@ type DataProps = {
 
 const Home = ({ data }: DataProps) => (
   <>
-    <div className="capitalize mb-20 text-6xl font-extrabold text-center leading-none tracking-tight text-gray-900 text-white">
+    <div className="capitalize mb-20 text-6xl font-extrabold text-center leading-none tracking-tight text-white">
       Events around the world
     </div>
     <div className="flex flex-col gap-16">
@@ -34,7 +34,7 @@ const Home = ({ data }: DataProps) => (
             <h2 className="text-3xl font-extrabold text-white pb-4">
               {event.title}
             </h2>
-            <p className="text-justify mb-4 text-lg font-normal text-gray-500 text-gray-400">
+            <p className="text-justify mb-4 text-lg font-normal text-gray-500">
               {event.description}
             </p>
           </div>

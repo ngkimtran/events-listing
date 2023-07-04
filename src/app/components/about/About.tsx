@@ -1,6 +1,6 @@
 const About = () => (
   <>
-    <h1 className="capitalize mb-20 text-6xl font-extrabold text-center leading-none tracking-tight text-gray-900 text-white">
+    <h1 className="capitalize mb-20 text-6xl font-extrabold text-center leading-none tracking-tight text-white">
       About Us
     </h1>
     <p className="text-justify pb-8">

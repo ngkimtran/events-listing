@@ -16,7 +16,7 @@ type DataProps = {
 
 const Events = ({ data }: DataProps) => (
   <>
-    <h1 className="capitalize mb-20 text-6xl font-extrabold text-center leading-none tracking-tight text-gray-900 text-white">
+    <h1 className="capitalize mb-20 text-6xl font-extrabold text-center leading-none tracking-tight text-white">
       Events
     </h1>
     <div className={`grid md:grid-cols-3 grid-rows-1 gap-5`}>
