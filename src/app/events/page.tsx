@@ -1,7 +1,7 @@
 import Events from "../components/events/Events";
 
 const getData = async () => {
-  const { events_categories } = await import("../../data/data.json");
+  const { events_categories } = await import("../../data/tmp/data.json");
 
   return {
     events_categories,

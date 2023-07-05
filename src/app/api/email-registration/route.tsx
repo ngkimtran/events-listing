@@ -11,7 +11,8 @@ type EventProps = {
   emails_registered: string[];
 };
 
-const buildPath = () => path.join(process.cwd(), "src", "data", "data.json");
+const buildPath = () =>
+  path.join(process.cwd(), "src", "data", "tmp", "data.json");
 
 const extractData = (filePath: string) =>
   JSON.parse(fs.readFileSync(filePath).toString());
