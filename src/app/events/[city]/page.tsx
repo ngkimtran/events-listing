@@ -1,7 +1,7 @@
 import EventsPerCity from "@/app/components/events/EventsPerCity";
 
 const getData = async (city: string) => {
-  const { all_events } = await import("../../../data/tmp/data.json");
+  const { all_events } = await import("../../../data/data.json");
   const decodedCity = decodeURIComponent(city);
   const allPaths = all_events.filter((event) => event.city === decodedCity);
 

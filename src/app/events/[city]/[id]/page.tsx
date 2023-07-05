@@ -1,7 +1,7 @@
 import SingleEvent from "@/app/components/events/SingleEvent";
 
 const getData = async (id: string) => {
-  const { all_events } = await import("../../../../data/tmp/data.json");
+  const { all_events } = await import("../../../../data/data.json");
   const decodedId = decodeURIComponent(id);
   const singleEvent = all_events.find((event) => event.id === decodedId);
 

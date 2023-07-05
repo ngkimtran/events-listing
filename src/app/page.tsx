@@ -1,7 +1,7 @@
 import Home from "./components/home/Home";
 
 const getData = async () => {
-  const { events_categories } = await import("../data/tmp/data.json");
+  const { events_categories } = await import("../data/data.json");
 
   return {
     events_categories,
